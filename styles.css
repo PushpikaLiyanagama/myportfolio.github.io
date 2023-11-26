@@ -1,72 +1,77 @@
 /* Add the background color to the body */
 body {
-    background-color: #48cae4;
-    font-family: Arial, sans-serif; /* Added a font family for better readability */
+  background-color: #48cae4;
+  font-family: Arial, sans-serif; /* Added a font family for better readability */
+}
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fade-in animation for the header */
+header {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px 0;
+  animation: fadeInAnimation 1s ease-in-out; /* Apply animation */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
   }
-  
-  /* Reset default margin and padding */
-  body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+  to {
+    opacity: 1;
   }
-  
-  /* Fade-in animation for the header */
-  header {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 20px 0;
-    animation: fadeInAnimation 1s ease-in-out; /* Apply animation */
-  }
-  
-  /* Keyframes for the fade-in animation */
-  @keyframes fadeInAnimation {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+}
+
+header img {
+  width: 150px; /* Adjust the size of the photo */
+  border-radius: 50%; /* For a circular photo */
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Adjust the Facebook and LinkedIn icons */
+.social-links a i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+/* Style the main content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about {
+  margin-top: 30px;
+}
+
+/* Add more styles as needed for different sections */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
   header img {
-    width: 150px; /* Adjust the size of the photo */
-    border-radius: 50%; /* For a circular photo */
+    width: 100px;
   }
-  
-  header h1 {
-    margin-top: 10px;
-    font-size: 24px;
-  }
-  
-  header p {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  .social-links a {
-    display: inline-block;
-    margin: 0 5px;
-    color: #000;
-    text-decoration: none;
-  }
-  
-  /* Style the main content */
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .about {
-    margin-top: 30px;
-  }
-  
-  /* Add more styles as needed for different sections */
-  
-  /* Responsive styles for smaller screens */
-  @media (max-width: 600px) {
-    header img {
-      width: 100px;
-    }
-  }
-  
+}
